@@ -1,0 +1,226 @@
+import sys
+import time
+import random
+import math
+
+class Program():
+  __interpretation_started_timestamp__ = time.time() * 1000
+
+  pi = 3.141592653589793
+  en = None
+  p = None
+  s = None
+
+  def execMain(self):
+
+    
+    self.s = 71
+    self.p = self.pi * 5.6
+    self.en = self.s * 360 / self.p
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    brick.motor("M4").setPower(30)
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = self.pi * 30 / 4
+    self.p = self.pi * 8
+    self.en = self.s * 360 / self.p
+    brick.encoder("E1").reset()
+    brick.encoder("E2").reset()
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    
+    brick.motor("M4").setPower(-(30))
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = 50
+    self.p = self.pi * 8
+    self.en = self.s * 360 / self.p
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    brick.motor("M4").setPower(30)
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = self.pi * 30 / 4
+    self.p = self.pi * 8
+    self.en = self.s * 360 / self.p
+    brick.encoder("E1").reset()
+    brick.encoder("E2").reset()
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M4").setPower(30)
+    
+    brick.motor("M3").setPower(-(30))
+    
+    while not (brick.encoder("E4").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = 36
+    self.p = self.pi * 8.2
+    self.en = self.s * 360 / self.p
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    brick.motor("M4").setPower(30)
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = self.pi * 30 / 4
+    self.p = self.pi * 8
+    self.en = self.s * 360 / self.p
+    brick.encoder("E1").reset()
+    brick.encoder("E2").reset()
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M4").setPower(30)
+    
+    brick.motor("M3").setPower(-(30))
+    
+    while not (brick.encoder("E4").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = 30
+    self.p = self.pi * 8.2
+    self.en = self.s * 360 / self.p
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    brick.motor("M4").setPower(30)
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = self.pi * 31 / 2
+    self.p = self.pi * 8
+    self.en = self.s * 360 / self.p
+    brick.encoder("E1").reset()
+    brick.encoder("E2").reset()
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M4").setPower(30)
+    
+    brick.motor("M3").setPower(-(30))
+    
+    while not (brick.encoder("E4").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = 130
+    self.p = self.pi * 8.2
+    self.en = self.s * 360 / self.p
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    brick.motor("M4").setPower(30)
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = self.pi * 30 / 4
+    self.p = self.pi * 8
+    self.en = self.s * 360 / self.p
+    brick.encoder("E1").reset()
+    brick.encoder("E2").reset()
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    
+    brick.motor("M4").setPower(-(30))
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = 71
+    self.p = self.pi * 5.6
+    self.en = self.s * 360 / self.p
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M3").setPower(30)
+    brick.motor("M4").setPower(30)
+    
+    while not (brick.encoder("E3").read() > int(self.en)):
+      script.wait(10)
+    
+    self.s = self.pi * 22.5 / 4
+    self.p = self.pi * 8.2
+    self.en = self.s * 360 / self.p
+    brick.encoder("E1").reset()
+    brick.encoder("E2").reset()
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M4").setPower(49)
+    
+    brick.motor("M3").setPower(-(49))
+    
+    while not (brick.encoder("E4").read() > int(self.en)):
+      script.wait(10)
+    
+    brick.motor("M4").setPower(50)
+    
+    brick.motor("M3").setPower(46)
+    
+    script.wait(6000)
+    
+    self.s = self.pi * 22.5 / 4
+    self.p = self.pi * 8.2
+    self.en = self.s * 360 / self.p
+    brick.encoder("E1").reset()
+    brick.encoder("E2").reset()
+    brick.encoder("E3").reset()
+    brick.encoder("E4").reset()
+    
+    brick.motor("M4").setPower(49)
+    
+    brick.motor("M3").setPower(-(49))
+    
+    while not (brick.encoder("E4").read() > int(self.en)):
+      script.wait(10)
+    
+    brick.motor("M4").setPower(50)
+    
+    brick.motor("M3").setPower(46)
+    
+    script.wait(9000)
+    
+    brick.motor("M3").setPower(100)
+    
+    brick.motor("M4").setPower(-(100))
+    
+    script.wait(850)
+    
+    brick.motor("M4").setPower(50)
+    
+    brick.motor("M3").setPower(46)
+    
+    script.wait(4150)
+    
+    brick.stop()
+    return
+
+def main():
+  program = Program()
+  program.execMain()
+
+if __name__ == '__main__':
+  main()
